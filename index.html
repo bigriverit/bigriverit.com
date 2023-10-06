@@ -3,19 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Big River IT</title>	
+	<link rel="stylesheet" href="main.css">
+	<title>Big River IT</title>
 </head>
 <body>
-	<h1>Big River IT</h1>
-	<p>Richland, WA</p>
-
-	<h2>What we offer:</h2>
-	<ul>
-		<li>Computer repair</li>
-		<li>Server administration</li>
-		<li>Business strategy</li>
-	</ul>
-
-	<a href="./contact.html">Contact Us</a>
+	<header>
+		<img src="https://dummyimage.com/150x200/afa/222" alt="placeholder" />
+		<div>
+			<h1>Big River IT</h1>
+			<p><i>The Tri-cities local computer consultant&#8230;<br/>for <span id="age"></span> years!</i></p>
+		</div>
+		<img src="https://dummyimage.com/150x200/afa/222" alt="placeholder" />
+	</header>
+	<main>
+		<div>
+			<h1>Services</h1>
+			<ul>
+				<li>Windows and Mac</li>
+				<li>Wireless Networks</li>
+				<li>Server Support</li>
+			</ul>
+		</div>
+		<div>
+			<h1>Contact</h1>
+			<form action="https://formspree.io/f/xoqopbpq" method="post">
+				<ul>
+					<li>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="user_name"  required />
+					</li>
+					<li>
+						<label for="mail">Email:</label>
+						<input type="email" id="mail" name="user_email"  required />
+					</li>
+					<li>
+						<label for="msg">Message:</label>
+						<textarea id="msg" name="user_message" rows="8" required ></textarea>
+					</li>
+					<li>
+						<button type="submit">Send your message</button>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</main>
+	<footer>
+		Copyright <span id="cur"></span>
+	</footer>
 </body>
+<script>
+	let ageEl = document.getElementById('age')
+	let curEl = document.getElementById('cur')
+
+	let cur = new Date().getFullYear()
+
+	ageEl.innerHTML = cur - 2006
+	curEl.innerHTML = cur
+</script>
 </html>
