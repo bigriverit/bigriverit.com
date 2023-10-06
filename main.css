@@ -1,6 +1,6 @@
 body {
 	background-color: #dfdfdf;
-	font-family: serif;
+	font-family: serif, system-ui, sans-serif;
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 4em 1em;
@@ -8,8 +8,6 @@ body {
 }
 
 header {
-	display: flex;
-	justify-content: space-between;
 	background-color: #fafafa;
 	border: 1px solid #1f1f1f;
 	padding: 1em;
@@ -23,6 +21,11 @@ header h1 {
 
 header p {
 	line-height: 1.5;
+}
+header img {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 main {
