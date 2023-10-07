@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="main.css">
 	<title>Big River IT</title>
 </head>
+
 <body>
 	<header>
 		<h1>Big River IT</h1>
-		<p><i>The Tri-cities local computer consultant<br/>&#8230;for <span id="age"></span> years!</i></p>
+		<p><i>The Tri-cities local computer consultant<br />&#8230;for <span id="age"></span> years!</i></p>
 	</header>
 	<main>
 		<div>
@@ -26,15 +28,15 @@
 				<ul>
 					<li>
 						<label for="name">Name:</label>
-						<input type="text" id="name" name="user_name"  required />
+						<input type="text" id="name" name="user_name" required />
 					</li>
 					<li>
 						<label for="mail">Email:</label>
-						<input type="email" id="mail" name="user_email"  required />
+						<input type="email" id="mail" name="user_email" required />
 					</li>
 					<li>
 						<label for="msg">Message:</label>
-						<textarea id="msg" name="user_message" rows="8" required ></textarea>
+						<textarea id="msg" name="user_message" rows="8" required></textarea>
 					</li>
 					<li>
 						<button type="submit">Send your message</button>
@@ -44,16 +46,19 @@
 		</div>
 	</main>
 	<footer>
-		Copyright <span id="cur"></span>
+		<p>
+			<i><span class="red">Veteran</span> <span class="blue">Owned</span> <span class="red">&</span> <span class="blue">Operated</span></i><br/>
+			&copy; <span id="cur"></span> Big River IT</p>
 	</footer>
+	<script>
+		let ageEl = document.getElementById('age')
+		let curEl = document.getElementById('cur')
+
+		let cur = new Date().getFullYear()
+
+		ageEl.innerHTML = cur - 2006
+		curEl.innerHTML = cur
+	</script>
 </body>
-<script>
-	let ageEl = document.getElementById('age')
-	let curEl = document.getElementById('cur')
 
-	let cur = new Date().getFullYear()
-
-	ageEl.innerHTML = cur - 2006
-	curEl.innerHTML = cur
-</script>
 </html>

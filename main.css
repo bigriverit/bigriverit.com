@@ -70,5 +70,14 @@ form li:last-child {
 
 footer {
 	text-align: center;
+	line-height: 2;
 	margin: 1em;
+}
+
+footer .red {
+	color: red;
+}
+
+footer .blue {
+	color: blue;
 }
