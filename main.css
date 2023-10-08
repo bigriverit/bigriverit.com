@@ -7,6 +7,12 @@ body {
 	font-size: large;
 }
 
+@media screen and (max-width: 500px) {
+	body {
+		padding: 1em;
+	}
+}
+
 header {
 	background-color: #fafafa;
 	border: 1px solid #1f1f1f;
