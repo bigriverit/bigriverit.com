@@ -63,13 +63,14 @@ form input, form textarea {
 }
 
 form li:last-child {
-	flex-wrap: wrap;
 	justify-content: right;
 }
 
 form .g-recaptcha {
 	position: absolute;
-	left: 1em;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 form .hidden {
