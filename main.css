@@ -60,7 +60,7 @@ main section {
 	flex-grow: 1;
 	min-width: 300px;
 	margin-top: 1em;
-	padding: 0 1em;
+	padding: 0 1em 1em 1em;
 	background-color: #fafafa;
 	border: 1px solid #1f1f1f;
 }
