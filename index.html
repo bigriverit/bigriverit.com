@@ -28,6 +28,7 @@
 		<section>
 			<h1>Contact</h1>
 			<form name="contact" data-netlify-recaptcha="true" data-netlify="true">
+				<div id="reCAPTCHA" data-netlify-recaptcha="true" class="hidden"></div>
 				<ul>
 					<li>
 						<label for="name">Name:</label>
@@ -42,10 +43,7 @@
 						<textarea id="msg" name="user_message" rows="8" required></textarea>
 					</li>
 					<li>
-						<div id="reCAPTCHA" data-netlify-recaptcha="true" class="hidden">reCAPTCHA</div>
-						<div>
-							<button type="submit">Send your message</button>
-						</div>
+						<button type="submit">Send your message</button>
 					</li>
 				</ul>
 			</form>
@@ -62,6 +60,17 @@
 
 		ageEl.innerHTML = cur - 2006
 		copyEl.innerHTML = cur
+
+		// form
+		let captchaEl = document.getElementById('reCAPTCHA')
+		let formEl = document.querySelector('form')
+		let formListEl = document.querySelector('form ul')
+		formEl.addEventListener('submit', (ev) => {
+			formListEl.classList.add('hidden')
+			captchaEl.classList.remove('hidden')
+			console.log(grecaptcha)
+			ev.preventDefault();
+		})
 	</script>
 </body>
 

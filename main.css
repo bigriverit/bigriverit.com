@@ -32,7 +32,7 @@ main {
 
 main section {
 	flex-grow: 1;
-	min-width: 200px;
+	min-width: 300px;
 	margin-top: 1em;
 	padding: 0 1em;
 	background-color: #fafafa;
@@ -65,6 +65,15 @@ form input, form textarea {
 form li:last-child {
 	flex-wrap: wrap;
 	justify-content: right;
+}
+
+form #reCAPTCHA {
+	position: absolute;
+	left: 1em;
+}
+
+form .hidden {
+	visibility: hidden;
 }
 
 footer {
