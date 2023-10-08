@@ -30,7 +30,7 @@ main {
 	column-gap: 1em;
 }
 
-main div {
+main section {
 	flex-grow: 1;
 	min-width: 300px;
 	margin-top: 1em;
