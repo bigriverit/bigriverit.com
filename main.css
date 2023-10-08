@@ -1,6 +1,6 @@
 body {
 	background-color: #dfdfdf;
-	font-family: serif, system-ui, sans-serif;
+	font-family: sans-serif;
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 4em 1em;
@@ -10,12 +10,11 @@ body {
 header {
 	background-color: #fafafa;
 	border: 1px solid #1f1f1f;
-	padding: 1em;
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 2em;
-	justify-content: center;
 	align-items: center;
+	padding: 1em;
 }
 
 header h1 {
@@ -26,14 +25,17 @@ header h1 {
 
 header p {
 	margin: 0;
-	line-height: 1.5;
+	font-size: medium;
 }
 
-header .tagline {
-	font-size: medium;
-	font-style: italic;
-	color: #00a0fe;
+header .subtitle {
+	color: #707070;
 	padding-bottom: 1em;
+}
+
+header .message {
+	font-family: serif;
+	font-style: italic;
 }
 
 main {
@@ -57,8 +59,13 @@ main h1 {
 }
 
 main ul {
-	list-style: none;
 	padding: 0 1em;
+	list-style: none;
+}
+
+.services li {
+	margin-bottom: 0.5em;
+	font-style: italic;
 }
 
 form {
