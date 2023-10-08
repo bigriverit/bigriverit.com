@@ -42,8 +42,10 @@
 						<textarea id="msg" name="user_message" rows="8" required></textarea>
 					</li>
 					<li>
-						<div data-netlify-recaptcha="true"></div>
-						<button type="submit">Send your message</button>
+						<div id="reCAPTCHA" data-netlify-recaptcha="true" class="hidden">reCAPTCHA</div>
+						<div>
+							<button type="submit">Send your message</button>
+						</div>
 					</li>
 				</ul>
 			</form>

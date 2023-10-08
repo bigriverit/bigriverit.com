@@ -32,7 +32,7 @@ main {
 
 main section {
 	flex-grow: 1;
-	min-width: 300px;
+	min-width: 200px;
 	margin-top: 1em;
 	padding: 0 1em;
 	background-color: #fafafa;
@@ -46,6 +46,10 @@ main h1 {
 main ul {
 	list-style: none;
 	padding: 0 1em;
+}
+
+form {
+	position: relative;
 }
 
 form li {
