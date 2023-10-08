@@ -25,12 +25,12 @@ header h1 {
 
 header p {
 	margin: 0;
-	font-size: medium;
 }
 
 header .subtitle {
 	color: #707070;
 	padding-bottom: 1em;
+	font-size: medium;
 }
 
 header .message {
