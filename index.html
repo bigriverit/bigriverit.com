@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="main.css">
 	<title>Big River IT</title>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -28,19 +29,19 @@
 		<section>
 			<h1>Contact</h1>
 			<form name="contact" data-netlify-recaptcha="true" data-netlify="true">
-				<div id="reCAPTCHA" data-netlify-recaptcha="true" class="hidden"></div>
+				<div class="g-recaptcha hidden" data-callback="recaptchaCallback" data-sitekey="6LdcOocoAAAAAEfkbhRY2IgqRCjz7wHrzE8P0h2W"></div>
 				<ul>
 					<li>
 						<label for="name">Name:</label>
-						<input type="text" id="name" name="user_name" required />
+						<input value="John Doe" type="text" id="name" name="user_name" required />
 					</li>
 					<li>
 						<label for="mail">Email:</label>
-						<input type="email" id="mail" name="user_email" required />
+						<input value="Johndoe@email.com" type="email" id="mail" name="user_email" required />
 					</li>
 					<li>
 						<label for="msg">Message:</label>
-						<textarea id="msg" name="user_message" rows="8" required></textarea>
+						<textarea id="msg" name="user_message" rows="8" required>testing</textarea>
 					</li>
 					<li>
 						<button type="submit">Send your message</button>
@@ -61,16 +62,19 @@
 		ageEl.innerHTML = cur - 2006
 		copyEl.innerHTML = cur
 
-		// form
-		let captchaEl = document.getElementById('reCAPTCHA')
+		let captchaEl = document.querySelector('.g-recaptcha')
 		let formEl = document.querySelector('form')
 		let formListEl = document.querySelector('form ul')
+		
 		formEl.addEventListener('submit', (ev) => {
 			formListEl.classList.add('hidden')
 			captchaEl.classList.remove('hidden')
-			console.log(grecaptcha)
 			ev.preventDefault();
 		})
+
+		function recaptchaCallback() {
+			formEl.submit()
+		}
 	</script>
 </body>
 

@@ -67,7 +67,7 @@ form li:last-child {
 	justify-content: right;
 }
 
-form #reCAPTCHA {
+form .g-recaptcha {
 	position: absolute;
 	left: 1em;
 }
