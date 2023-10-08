@@ -12,7 +12,7 @@
 	<header>
 		<h1>Big River IT</h1>
 		<p>
-			Veteran Owned Small Business<br/>
+			<i>Veteran Owned Small Business</i><br/>
 			Operating in the Columbia Basin for <span id="age"></span> years!
 		</p>
 	</header>
@@ -27,7 +27,7 @@
 		</div>
 		<div>
 			<h1>Contact</h1>
-			<form name="contact" netlify>
+			<form name="contact" data-netlify-recaptcha="true" data-netlify="true">
 				<ul>
 					<li>
 						<label for="name">Name:</label>
@@ -42,6 +42,9 @@
 						<textarea id="msg" name="user_message" rows="8" required></textarea>
 					</li>
 					<li>
+						<div data-netlify-recaptcha="true"></div>
+					</li>
+					<li>
 						<button type="submit">Send your message</button>
 					</li>
 				</ul>
@@ -49,16 +52,16 @@
 		</div>
 	</main>
 	<footer>
-		<p>	&copy; <span id="cur"></span> Big River IT</p>
+		<p>	&copy; <span id="copy"></span> Big River IT</p>
 	</footer>
 	<script>
 		let ageEl = document.getElementById('age')
-		let curEl = document.getElementById('cur')
+		let copyEl = document.getElementById('copy')
 
 		let cur = new Date().getFullYear()
 
 		ageEl.innerHTML = cur - 2006
-		curEl.innerHTML = cur
+		copyEl.innerHTML = cur
 	</script>
 </body>
 
