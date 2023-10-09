@@ -79,25 +79,25 @@ main ul {
 	font-style: italic;
 }
 
-form {
-	position: relative;
+fieldset {
+	border: none;
 }
 
-form li {
+fieldset div {
 	display: flex;
 	column-gap: 0.5em;
 	margin-bottom: 1em;
 }
 
-form input, form textarea {
-	flex-grow: 1;
-}
-
-form li:last-child {
+fieldset div:last-child {
 	justify-content: right;
 }
 
-form .hidden {
+fieldset input, form textarea {
+	flex-grow: 1;
+}
+
+.hidden {
 	visibility: hidden;
 }
 
