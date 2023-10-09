@@ -10,12 +10,6 @@ body {
 	padding: 4em 1em;
 }
 
-@media screen and (max-width: 500px) {
-	body {
-		padding: 2em 1em 1em 1em;
-	}
-}
-
 header, section {
 	background-color: #fafafa;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -90,7 +84,7 @@ form {
 
 fieldset {
 	border: none;
-	padding-left: 1em;
+	padding: 0 0 0 1em;
 	margin: 0;
 }
 
@@ -108,8 +102,13 @@ input, textarea {
 	flex-grow: 1;
 }
 
+fieldset, .recaptcha-container {
+	transition: opacity 300ms, visibility;
+}
+
 .hidden {
 	visibility: hidden;
+	opacity: 0;
 }
 
 .recaptcha-container {
@@ -129,4 +128,18 @@ footer {
 	margin-top: 2em;
 	color: #707070;
 	font-size: medium;
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		padding: 2em 1em 1em 1em;
+	}
+
+	ul {
+		padding-left: 1em;
+	}
+
+	fieldset {
+		padding-left: 0;
+	}
 }
