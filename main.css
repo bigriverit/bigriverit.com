@@ -69,7 +69,7 @@ main h1 {
 	color: #909090;
 }
 
-main ul {
+.services  {
 	padding: 0 1em;
 	list-style: none;
 }
@@ -77,6 +77,11 @@ main ul {
 .services li {
 	margin-bottom: 0.5em;
 	font-style: italic;
+}
+
+.services li::before {
+	content: "- ";
+	margin-right: 0.2em;
 }
 
 fieldset {
