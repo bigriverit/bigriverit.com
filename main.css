@@ -22,7 +22,6 @@ header {
 	flex-wrap: wrap;
 	column-gap: 2em;
 	align-items: center;
-	margin-bottom: 1em;
 }
 
 header img {
@@ -61,7 +60,7 @@ main {
 section {
 	flex: 1 1 0;
 	min-width: 300px;
-	
+	margin-top: 1em;
 }
 
 section h2 {
