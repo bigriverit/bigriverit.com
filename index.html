@@ -21,7 +21,7 @@
 	<main>
 		<section>
 			<h1>Services</h1>
-			<ul class="services">
+			<ul>
 				<li>Windows and Mac</li>
 				<li>Wireless Networks</li>
 				<li>Server Support</li>
@@ -30,10 +30,6 @@
 		<section>
 			<h1>Contact</h1>
 			<form name="contact" data-netlify-recaptcha="true" data-netlify="true">
-				<div class="recaptcha-container hidden">
-					<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdcOocoAAAAAEfkbhRY2IgqRCjz7wHrzE8P0h2W"></div>
-					<button type="button">Cancel</button>
-				</div>
 				<fieldset>
 					<div>
 						<label for="name">Name:</label>
@@ -51,6 +47,10 @@
 						<button type="submit">Send your message</button>
 					</div>
 				</fieldset>
+				<div class="recaptcha-container hidden">
+					<div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdcOocoAAAAAEfkbhRY2IgqRCjz7wHrzE8P0h2W"></div>
+					<button type="button">Cancel</button>
+				</div>
 			</form>
 		</section>
 	</main>
