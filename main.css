@@ -64,13 +64,13 @@ main {
 	column-gap: 1em;
 }
 
-main section {
+section {
 	flex: 1 1 0;
 	min-width: 300px;
 	
 }
 
-main h1 {
+section h2 {
 	color: #909090;
 	margin-top: 0;
 }
@@ -104,7 +104,7 @@ fieldset div:last-child {
 	justify-content: right;
 }
 
-fieldset input, form textarea {
+input, textarea {
 	flex-grow: 1;
 }
 
