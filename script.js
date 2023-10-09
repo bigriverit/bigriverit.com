@@ -8,17 +8,17 @@ copyEl.innerHTML = cur
 
 let captchaEl = document.querySelector('.recaptcha-container')
 let formEl = document.querySelector('form')
-let formListEl = document.querySelector('form ul')
+let fieldsetEl = document.querySelector('fieldset')
 let cancelButtonEl = captchaEl.querySelector('button') 
 
 formEl.addEventListener('submit', (ev) => {
-	formListEl.classList.add('hidden')
+	fieldsetEl.classList.add('hidden')
 	captchaEl.classList.remove('hidden')
 	ev.preventDefault();
 })
 
 cancelButtonEl.addEventListener('click', (ev) => {
-	formListEl.classList.remove('hidden')
+	fieldsetEl.classList.remove('hidden')
 	captchaEl.classList.add('hidden')
 })
 
